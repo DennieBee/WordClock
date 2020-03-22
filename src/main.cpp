@@ -11,6 +11,7 @@
 #include <solidcolor.h>
 #include <rainbow.h>
 #include <gradient.h>
+#include <ticker.h>
 
 uint32_t frameduration;
 
@@ -36,8 +37,9 @@ void setup()
 
     // SolidColor::Initialize(CRGB(40,10,0));
     // Rainbow::Initialize(128, 25);
-    // Gradient::Initialize(CRGB(255, 0, 0), CRGB(0, 255, 0));
-    
+    // Gradient::Initialize(CRGB(0, 0, 100), CRGB(70, 0, 30));
+    // Ticker::Initialize("Word Clock Rules!", CRGB::Purple, 50);
+
     // Example animations
     // Animation::Initialize("http://xs4any.nl/marios/fire.bin");
     // Animation::Initialize("http://xs4any.nl/marios/spiral.bin");
@@ -46,7 +48,7 @@ void setup()
     // Animation::Initialize("http://xs4any.nl/marios/hearts.bin");
     // Animation::Initialize("http://xs4any.nl/marios/fireworks.bin");
     // Animation::Initialize("http://xs4any.nl/marios/matrix.bin");
-    
+
     // StatusBar::Disable();
 }
 
@@ -65,6 +67,7 @@ void loop()
     // SolidColor::Handle(info);
     // Rainbow::Handle(info);
     // Gradient::Handle(info);
+    // Ticker::Handle(info);
     
     // Actual time
     Clock::Handle(info);
